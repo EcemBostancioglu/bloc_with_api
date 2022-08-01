@@ -33,8 +33,8 @@ class _HomeViewState extends State<HomeView> {
                 itemCount:state.post.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    leading: Icon(Icons.chevron_right),
-                    title: Text('${state.post[index].title}'),
+                    leading:const Icon(Icons.chevron_right),
+                    title: Text('${state.post[index].id} ''-'' ${state.post[index].title}'),
                     subtitle: Text('${state.post[index].body}'),
                   );
                 },

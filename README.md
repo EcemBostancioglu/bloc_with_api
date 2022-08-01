@@ -1,16 +1,14 @@
-# bloc_with_api
+# Bloc with API
 
-A new Flutter project.
+# API Endpoints Used
+https://jsonplaceholder.typicode.com/
 
-## Getting Started
+##  Libraries which I used in the application:
+- Dio : https://pub.dev/packages/dio
+- Bloc : https://pub.dev/packages/bloc
+- Flutter Bloc : https://pub.dev/packages/flutter_bloc
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+#  Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Home Page
