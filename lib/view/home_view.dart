@@ -23,18 +23,28 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(TextConstants.posts),
-      ),
-      body: ListView.builder(
-        itemCount:8,
-        itemBuilder: (context, index) {
-          return const ListTile(
-            leading: Icon(Icons.chevron_right),
-            title: Text('Title'),
-            subtitle: Text('Body'),
-          );
-        },)
+        appBar: AppBar(
+          title: const Text(TextConstants.posts),
+        ),
+        body: BlocBuilder<PostsBloc, PostsState>(
+          builder: (context, state) {
+            if(state is GetPostsState){
+              return ListView.builder(
+                itemCount:state.post.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    leading: Icon(Icons.chevron_right),
+                    title: Text('${state.post[index].title}'),
+                    subtitle: Text('${state.post[index].body}'),
+                  );
+                },
+              );
+            }
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          },
+        )
     );
   }
 }
