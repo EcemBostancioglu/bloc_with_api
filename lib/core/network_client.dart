@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-class NetworkClient{
+class NetworkService{
 
   final Dio dio=Dio();
 

@@ -5,6 +5,22 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Posts'),
+      ),
+      body: Container(
+        child: ListView.builder(
+            itemBuilder: (context,index) {
+              return const ListTile(
+                leading: Icon(Icons.person_rounded),
+                title: Text('Title'),
+                subtitle:Text('Body') ,
+              );
+            },
+            itemCount:8),
+    ),
+    );
+    }
   }
-}
+
