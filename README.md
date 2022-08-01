@@ -10,5 +10,4 @@ https://jsonplaceholder.typicode.com/
 
 
 #  Screenshots
-
-# Home Page
+![Home Page](https://user-images.githubusercontent.com/72046458/182175351-03b247b0-226f-403c-8f4a-01b86b6a0bd8.png)
