@@ -4,13 +4,11 @@ import 'package:dio/dio.dart';
 
 class PostClient extends DioClient{
 
- DioClient dioClient=DioClient();
-
  Future<List<Post>> getPosts() async{
   List<Post> posts=[];
 
   try{
-   final Response response=await dio.get(dioClient.baseUrl);
+   final Response response=await dio.get(baseUrl);
    var parsedList=response.data;
    posts=parsedList.map<Post>((e)
    => Post.fromJson(e)).toList();
